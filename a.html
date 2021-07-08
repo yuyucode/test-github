@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 <div id="app">
+    <div id="div1">
+        <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+    </div>
+
+    <button id="insert">插入内容</button>
+    <div id="container"></div>
     <div id="main">
         我是主分支
         <h1>加油</h1>
@@ -18,5 +25,24 @@
         <h1>我是分支3的东西</h1>
     </div>
 </div>
+<script>
+    const E = window.wangEditor
+    const editor = new E('#div1')
+    // 或者 const editor = new E( document.getElementById('div1') )
+    editor.create()
+    const insert = document.getElementById("insert");
+    const container = document.getElementById("container");
+
+    insert.onclick = function (){
+        let html = editor.txt.html();
+        console.log(html)
+        container.innerHTML = html
+    }
+
+    // 狗 老虎 蜥蜴
+    // 羊 老鼠 兔
+    // 老虎 蜥蜴 牛
+    // 狗 鹿 鹿
+</script>
 </body>
 </html>
