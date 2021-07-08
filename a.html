@@ -26,13 +26,6 @@
     </div>
 </div>
 <script>
-    const E = window.wangEditor
-    const editor = new E('#div1')
-    // 或者 const editor = new E( document.getElementById('div1') )
-    editor.create()
-    const insert = document.getElementById("insert");
-    const container = document.getElementById("container");
-
     insert.onclick = function (){
         let html = editor.txt.html();
         console.log(html)
