@@ -13,26 +13,20 @@
         <h1>新增了test1</h1>
         <h1>我是test1-1</h1>
         <h1>最终结果</h1>
+        <h2>修复号了</h2>
     </div>
 </div>
 <script>
 
-    // (sdfsfsd(sfd)sfds(sdfds)(dsfdsds))
-
     let str1 = "((asdasda((sdasdasdas))12321as))dasdasda";
     let str2 = "sadas2321321((asdasd2321321))asdsada2132312";
     let str3= "wqewqeqw((asdasdas2132132";
-
-    // const reg = /^((\w|\s|\(\()*)?((\)\)|\w)*)$/g;
-    // const reg = /^((\w|\s|\(\()*)(((\w|\s|\)\))|(\)\)))*)/g;
     const reg = /^((\w|\s|\(\()*)(\w+)/;
     const a = str1.replace(reg, function($1, $2){
         console.log("本身",$1)
         console.log("本身",$2)
     })
     console.log(a)
-
-
 </script>
 </body>
 </html>
