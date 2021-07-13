@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,22 +15,9 @@
     </div>
 </div>
 <script>
-
-    // (sdfsfsd(sfd)sfds(sdfds)(dsfdsds))
-
-    let str1 = "((asdasda((sdasdasdas))12321as))dasdasda";
-    let str2 = "sadas2321321((asdasd2321321))asdsada2132312";
-    let str3= "wqewqeqw((asdasdas2132132";
-
-    // const reg = /^((\w|\s|\(\()*)?((\)\)|\w)*)$/g;
-    // const reg = /^((\w|\s|\(\()*)(((\w|\s|\)\))|(\)\)))*)/g;
-    const reg = /^((\w|\s|\(\()*)(\w+)/;
-    const a = str1.replace(reg, function($1, $2){
-        console.log("本身",$1)
-        console.log("本身",$2)
-    })
-    console.log(a)
-
+</script>
+<script>
+    const reg = /\w+/g;
 
 </script>
 </body>
