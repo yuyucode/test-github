@@ -1,0 +1,30 @@
+{
+  "name": "test-github",
+  "version": "1.0.0",
+  "description": "测试pull request",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyucode/test-github.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyucode/test-github/issues"
+  },
+  "homepage": "https://github.com/yuyucode/test-github#readme",
+  "devDependencies": {
+    "@types/node": "^16.3.2",
+    "prisma": "^2.27.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.27.0"
+  }
+}
