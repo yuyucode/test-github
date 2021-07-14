@@ -10,3 +10,10 @@ console.log(post)
 
 const a = path.resolve("/...")
 console.log(a)
+
+
+/** 其他内容 **/
+
+const b = {
+    ob: 1
+}
