@@ -38,9 +38,7 @@ sdfsdfsdfsdfssd
 牛 吗 兔
 兔 狼
 
-<<<<<<< HEAD
 ## E
 ## F
-=======
+
 ## C
->>>>>>> 5addf65 ('C')
