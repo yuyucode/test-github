@@ -31,6 +31,10 @@
 <div>
     开发客户端
 </div>
+<div id="test">
+
+</div>
+<input type="text" value="<p>&gt;1232131&lt;</p>">
 <script>
     const issue = 100;
     const fix = {
@@ -49,6 +53,11 @@
 </script>
 <script>
     // FDSFDS DSF DSF SDF DS SDFDS
+    const test = document.getElementById("test");
+    let str = "   <div>         <p>第三方胜多12312312单费深度&gt;&lt;</p></div>";
+    alert(str)
+    test.innerHTML = str;
+    console.log(test.innerHTML)
 </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script>
+</head>
+<body>
+<div id="div1">
+    <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+</div>
+
+<!-- 引入 wangEditor.min.js -->
+<script type="text/javascript">
+    const E = window.wangEditor
+    const editor = new E('#div1')
+    // 配置 onchange 回调函数
+    editor.config.onchange = function (newHtml) {
+        console.log("change 之后最新的 html", newHtml);
+    };
+    // 配置触发 onchange 的时间频率，默认为 200ms
+    editor.config.onchangeTimeout = 500
+    console.log(editor.config)
+    // 或者 const editor = new E( document.getElementById('div1') )
+    // editor.create()
+</script>
+</body>
+</html>
