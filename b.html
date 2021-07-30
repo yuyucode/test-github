@@ -12,17 +12,15 @@
 
 <!-- 引入 wangEditor.min.js -->
 <script type="text/javascript">
-    const E = window.wangEditor
-    const editor = new E('#div1')
-    // 配置 onchange 回调函数
-    editor.config.onchange = function (newHtml) {
-        console.log("change 之后最新的 html", newHtml);
-    };
-    // 配置触发 onchange 的时间频率，默认为 200ms
-    editor.config.onchangeTimeout = 500
-    console.log(editor.config)
-    // 或者 const editor = new E( document.getElementById('div1') )
-    // editor.create()
+    // 单位：亿
+    const hp = 145599;
+    const harm = 18592920000;
+    console.log("老黑伤害结果百分比", (harm / hp) * 100, "%");
+
+
+    const left = 27980393;
+    const right = 38763515;
+    console.log("高出对面伤害", right - left, "%")
 </script>
 </body>
 </html>
